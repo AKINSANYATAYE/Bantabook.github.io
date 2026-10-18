@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>New Babylon | by Akinsanya Okwuchukwu Duru</title>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F6FA; --surface:#FFFFFF; --ink:#12223A; --muted:#51607A; --line:#D9E0EC;
+  --accent:#F2A541; --accent-ink:#12223A; --cover:#12223A; --cover-ink:#F4F6FA;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1626; --surface:#16233A; --ink:#EAF0FA; --muted:#9FB0CC; --line:#27375A;
+    --cover:#F2A541; --cover-ink:#12223A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1626; --surface:#16233A; --ink:#EAF0FA; --muted:#9FB0CC; --line:#27375A;
+  --cover:#F2A541; --cover-ink:#12223A; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
+h1,h2{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:56px 0}
+.hero{display:grid;gap:40px;align-items:center;padding:48px 0 56px}
+@media(min-width:820px){.hero{grid-template-columns:5fr 6fr;gap:64px;padding:80px 0}}
+.cover{aspect-ratio:2/3;max-width:320px;width:100%;margin:0 auto;background:var(--cover);color:var(--cover-ink);border-radius:4px 10px 10px 4px;padding:34px 28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:-10px 0 0 rgba(0,0,0,.18) inset,0 24px 40px rgba(18,34,58,.25)}
+.cover b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:2rem;line-height:1.1}
+.cover span{font-size:1rem;opacity:.85}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem)}
+.sub{color:var(--muted);font-size:1.2rem;margin:16px 0 28px;max-width:34ch}
+.buy{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:1.1rem;text-decoration:none;padding:14px 28px;border-radius:8px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.price{font-size:1.5rem;font-weight:600}
+.price small{display:block;font-size:.9rem;color:var(--muted);font-weight:400}
+.note{color:var(--muted);font-size:.95rem;margin-top:14px}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:22px}
+.inside{border-top:1px solid var(--line)}
+.inside ul{margin:0;padding:0;list-style:none;display:grid;gap:14px;max-width:60ch}
+.inside li{padding-left:28px;position:relative}
+.inside li::before{content:"";position:absolute;left:0;top:.7em;width:14px;height:3px;background:var(--accent);border-radius:2px}
+.about{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about p{max-width:62ch;margin:0 0 14px}
+.quotes{display:grid;gap:20px}
+@media(min-width:820px){.quotes{grid-template-columns:1fr 1fr}}
+blockquote{margin:0;padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+blockquote p{margin:0 0 10px}
+blockquote footer{color:var(--muted);font-size:.95rem}
+.final{text-align:center}
+.final p{color:var(--muted);margin:0 auto 26px;max-width:44ch}
+footer.site{padding:26px 0 40px;color:var(--muted);font-size:.9rem;text-align:center;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div class="cover" role="img" aria-label="Book cover placeholder">
+        <b>New Babylon</b>
+        <span>Akinsanya Okwuchukwu Duru</span>
+      </div>
+      <div>
+        <h1>New Babylon</h1>
+        <p class="sub">A fresh look at debt, money habits and wealth, for anyone ready to build real financial freedom.</p>
+        <div class="buy">
+          <a class="btn" id="buy-top" href="#">Buy the ebook</a>
+          <div class="price">$5 <small>instant download</small></div>
+        </div>
+        <p class="note">Secure checkout on Selar.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="inside">
+    <div class="wrap">
+      <h2>What you will learn</h2>
+      <ul>
+        <li>How financial habits, society's expectations and economic systems can keep people trapped in cycles of struggle.</li>
+        <li>Why conventional financial thinking holds many people back, and how to question it.</li>
+        <li>Practical steps towards freedom from debt and financial dependency.</li>
+        <li>Better money management and a new way to think about building lasting wealth.</li>
+      </ul>
+      <p style="margin:28px 0 0;color:var(--muted);max-width:60ch">Written for young adults, salary earners, entrepreneurs, students and anyone struggling with debt or the challenge of building lasting wealth.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <h2>About the author</h2>
+      <p>Akinsanya Okwuchukwu Duru is the author of New Babylon, a book for readers who want to move from financial struggle to a more secure financial future.</p>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Get your copy today</h2>
+      <p>Download instantly after payment and start reading in minutes.</p>
+      <a class="btn" id="buy-bottom" href="#">Buy the ebook</a>
+    </div>
+  </section>
+</main>
+<footer class="site">© <span id="y"></span> Akinsanya Okwuchukwu Duru. All rights reserved.</footer>
+<script>
+// Paste your Selar product link between the quotes below, then both buttons will use it.
+var BUY_LINK = "https://selar.com/6578654jp6";
+if (BUY_LINK) { document.getElementById("buy-top").href = BUY_LINK; document.getElementById("buy-bottom").href = BUY_LINK; }
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
